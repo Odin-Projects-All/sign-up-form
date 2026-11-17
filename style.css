@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'Norse';
+    src: url('fonts/Norse.otf') format('opentype')
+}
+
+* {
+    margin: 0;
+}
+
+.main-container {
+    display: flex;
+    min-height: 100vh;
+
+}
+
+.image-left {
+    flex: 1;
+    position: relative;
+}
+
+.form-right {
+    flex: 2;
+}
+
+.image-left img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover; /*zooms and crops image to fill space w/o ruining aspect ratio*/
+}
+
+.photo-credit {
+    position: absolute;
+    bottom: 20px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+.title {
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    top: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.title img {
+    height: 80%;
+    width: auto;
+}
+
+.title h1 {
+    font-family: 'Norse', sans-serif;
+    color: white;
+    font-size: clamp(3rem, 4.5vw, 4rem);
+}
+
+.form-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(240, 240, 240)
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.middle {
+    border: 0;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 30px;
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.2);
+}
+
+.submit-btn {
+    background-color: #596D48;
+    color: white;
+    padding: 10px 24px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.301);
+}
+
+.form-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 40px;
+    margin-top: 20px;
+}
+
+.form-inputs > div {
+    min-width: 250px;
+    flex: 1;
+}
+
+label {
+    display: block; /* Puts the label on top of the input */
+}
+
+.login-link {
+    color: #596D48;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.bottom {
+    padding: 30px;
+    gap: 20px;
+    font-weight: bold;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    width: 100%;
+    border: 1px solid #E5E7EB;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+    border-color: #3b82f6;
+    border-radius: 4px;
+    box-shadow: 2px 3px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
+input[type="password"]:user-invalid {
+    border: 1px solid red;
+}

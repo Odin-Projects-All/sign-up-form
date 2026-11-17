@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="image-left">
+            <img src="img/unsplash.jpg" alt="Unsplash Bg">
+            <div class="title">
+                <img src="img/odin-lined.png" alt="Odin Logo">
+                <h1>ODIN</h1>
+            </div>
+            <p class="photo-credit">Photo by Halie West on Unsplash</p>
+        </div>
+
+        <div class="form-right">
+            <div class="top">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br>Sign up <em>now</em> to get started.</br></p>
+                <p>You <em>know</em> you want to.</p>
+            </div>
+
+            <form>
+                <div class="middle">
+                    <h3>Let's do this!</h3>
+                    <div class="form-inputs">
+                        <div>
+                            <label for="fname">FIRST NAME</label>
+                            <input id="fname" name="fname" type="text" required/>
+                        </div>
+                        <div>
+                            <label for="lname">LAST NAME</label>
+                            <input id="lname" name="lname" type="text" required/>
+                        </div>
+                        <div>
+                            <label for="mail">EMAIL</label>
+                            <input id="mail" name="mail" type="email" required/>
+                        </div>
+                        <div>
+                            <label for="pnumber">PHONE NUMBER</label>
+                            <input id="pnumber" name="pnumber" type="tel" required/>
+                        </div>
+                        <div>
+                            <label for="pword">PASSWORD</label>
+                            <input id="pword" name="pword" type="password" minlength="6" maxlength="12" required/>
+                        </div>
+                        <div>
+                            <label for="confirm_pword">CONFIRM PASSWORD</label>
+                            <input id="confirm_pword" name="confirm_pword" type="password" minlength="6" maxlength="12" required/>
+                        </div>                             
+                    </div>
+                </div>
+
+                <div class="bottom">
+                    <button type="submit" class="submit-btn">Create Account</button>
+                    <p>Already have an account? <a href="#" class="login-link">Log in</a></p>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
